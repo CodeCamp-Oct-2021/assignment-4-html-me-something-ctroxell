@@ -1,8 +1,79 @@
 <!DOCTYPE html>
+
+<!-- use p, header, footer, main, article, img -->
 <html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+    <head>
+        <title>Scout's Scrapbook</title>
+        <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+        <script>
+           window.addEventListener("load", function() {
+              console.log("window loaded")
+              const redChair = document.getElementById("redChair");
+              redChair.addEventListener("mouseover", function(){
+                  console.log("image moused over")
+                  redChair.style.borderColor = "white";
+              });
+              redChair.addEventListener("mouseout", function() {
+                  redChair.style.borderColor = "rgb(184, 81, 40)";
+              });
+           });
+        </script>
+    </head>
+
+   
+<body>
+   <header>
+      <h1 id="mainHeading">my scrapbook</h1>
+      <h2>by scout</h2>
+   </header>
+   <main>
+        
+<div class="sidebar">
+    <img id="redChair" src="images/favoriteChair.PNG" alt="me sitting in my favorite chair">
+    <h4>my name is scout! i am 4 years old.
+        <br>my instagram:<a href="https://www.instagram.com/troxpets/" target="_blank">
+        <img id="instagram" src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg">
+    </a></h4>
+    
+    <p id="testP" class = "funParagraph">some things i like to do:</p>
+    <ul id="list">
+        <li>eat plants</li>
+        <li>sit on the balcony</li>
+        <li>be crazy</li>
+        <li>lay under the covers</li>
+        <li>scratch my mom's favorite rug</li>
+        <li>writing terrible code</li>
+    </ul>
+</div>
+<div id="whiteCenter">
+    <br>
+    <div class="pinkbackground">
+        <p><br></p>
+        <img id="baby" class="img" src="images/babyScout.PNG" alt="me as a baby">
+        <p>this is me when i was adopted. i was so small!<br><br></p>
+    </div>
+    <article><br><img id="castle" src="images/castle.jpg" alt="me in my cat tree"><br>i am queen of this castle</article>
+
+   <div class="pinkbackground">
+      <p><br>sometimes i am a bit of a menace...</p>
+      <img src="images/scoutsMess.jpg" class="img" alt="a houseplant that i knocked over">
+      <p>i knocked this plant over.... and i will do it every chance i get (especially in the middle of the night)<br><br></p>
+   </div>
+    <img id="nipped" src="images/nipped.jpg" class="img" alt="me sitting with my bottle of meowijuana">
+
+    <p><br>my mom says i have a catnip problem so she is trying to grow cat grass for me</p>
+   
+   <article>
+      <p>my favorite things:</p>
+      <section>my favorite food is salmon</section>
+      <section>my favorite toy is my mouse</section>
+      <section>my favorite spot is my castle</section>
+   </article>
+
+   <p><br></p>
+</div>
+</main>
+<footer>&copy; Scout Troxell 2021</footer>
+</body>
+
 </html>
