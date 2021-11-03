@@ -5,21 +5,34 @@
     <head>
         <title>Scout's Scrapbook</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+        <script>
+           window.addEventListener("load", function() {
+              console.log("window loaded")
+              const redChair = document.getElementById("redChair");
+              redChair.addEventListener("mouseover", function(){
+                  console.log("image moused over")
+                  redChair.style.borderColor = "white";
+              });
+              redChair.addEventListener("mouseout", function() {
+                  redChair.style.borderColor = "rgb(184, 81, 40)";
+              });
+           });
+        </script>
     </head>
 
-<a id="catCursor">
+<a>
 <body>
         <h1>my scrapbook</h1>
         <h2>by scout</h2>
 <div class="sidebar">
-    <img id="redchair" src="images/favoriteChair.PNG" alt="me sitting in my favorite chair">
+    <img id="redChair" src="images/favoriteChair.PNG" alt="me sitting in my favorite chair">
     <h4>my name is scout! i am 4 years old.
         <br>my instagram:<a href="https://www.instagram.com/troxpets/" target="_blank">
         <img id="instagram" src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg">
     </a></h4>
     
+    <p class = "funParagraph">some things i like to do:</p>
     <ul id="list">
-        <li>hobbies:</li>
         <li>eat plants</li>
         <li>sit on the balcony</li>
         <li>be crazy</li>
@@ -41,14 +54,14 @@
 <p>i knocked this plant over.... and i will do it every chance i get (especially in the middle of the night)<br><br></p>
 </div>
     <img id="nipped" src="images/nipped.jpg" class="img" alt="me sitting with my bottle of meowijuana">
-<div class="pinkbackground">
+
     <p><br>my mom says i have a catnip problem so she is trying to grow cat grass for me</p>
-    <img id="grass1" src="images/grass1.jpg" class="img" alt="cat grass beginning to sprout">
-    <img id="grass2" src="images/grass2.jpg" class="img" alt="the cat grass is tall now">
-    <p><br></p>
-</div>
+   
+
 <p><br></p>
 </div>
+<heading id="mainHeading"></heading>
+<footer>&copy; Scout Troxell 2021</footer>
 </body>
 </a>
 </main>

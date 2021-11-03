@@ -1,17 +1,13 @@
 /* Write your CSS here! */
-html {
-    cursor: url("https://lh3.googleusercontent.com/proxy/mJK9cg1LNTstATRPpcK9CovdOG7afSRoix1HxTWhJU-F8vKW5jAN8wPoF91CV5JLV2i3qfyhEy0K28BMXR6NVbo"), auto;
-}
-
 .img {
     height: 300px;
     
 
 }
 
-#redchair {
+#redChair {
     width: 200px;
-    border: 50px solid rgb(184, 81, 40);
+    border: 20px solid rgb(184, 81, 40);
 }
 
 .sidebar {
@@ -27,6 +23,10 @@ html {
     padding-top: 20px;
     color:white;
     text-align: center;
+}
+
+.funParagraph {
+    color: green;
 }
 
 #list {
@@ -48,6 +48,10 @@ html {
     height: 50%;
 }
 
+#mainHeading {
+    color: red;
+}
+
 .pinkbackground {
     background-color: rgb(252, 219, 204);
 }
@@ -58,19 +62,21 @@ body {
     background-attachment: fixed;
     background-size: 450px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 8 px;
+    display: block;
 }
 
 h1 {
     background-color: rgb(230, 167, 142);
     color: white;
-    text-indent: 15%;
+    text-indent: 20%;
     text-align: left;
 }
 
 h2 {
     background-color: rgb(196, 210, 219);
     color:rgb(255, 255, 255);
-    text-indent: 19%;
+    text-indent: 24%;
     text-align: left;
 }
 
